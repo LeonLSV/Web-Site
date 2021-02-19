@@ -342,6 +342,25 @@ nav ul li {
     margin-left: 0;
   }
 }
+@media (max-width: 320px) {
+  .verifica-section-foto {
+    margin-left: 0;
+  }
+  .verifica-section-text {
+    width: 120px;
+  }
+  .verifica-title {
+    font-size: var(--size-14);
+  }
+  .verifica-subtitle {
+    font-size: var(--size-14);
+    width: 100px;
+  }
+  .verifica-description {
+    font-size: 12px;
+    line-height: 13px;
+  }
+}
 
 /* container asesoramiento */
 .asesoramiento-section-container {
