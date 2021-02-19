@@ -32,7 +32,11 @@
                 <li class="hvr-grow-shadow"><a href="#asesoramiento">Asesoramiento al postulante</a></li><br />
                 <li class="hvr-grow-shadow"><a href="#informacion">Información de carreras</a></li><br />
                 <li class="hvr-grow-shadow"><a href="#preguntas">Preguntas frecuentes</a></li>
-
+              <div class="menu-iconos-hambur">
+                <li class="nav-menu-social-icon"><a href="/"><img src="./assets/facebook.svg" alt="" /></a></li>
+                <li class="nav-menu-social-icon"><a href="/"><img src="./assets/instagram.svg" alt="" /></a></li>
+                <li class="nav-menu-social-icon"><a href="/"><img src="./assets/youtube.svg" alt="" /></a></li>
+              </div>
               </ul>
             </nav>
             <li class="nav-menu-logo"><a href="/"><img src="./assets/logo.svg" alt="Logo" /></a></li>
@@ -53,17 +57,40 @@
       </nav>
     </header>
 
-    <section>
+    <section class="banner1">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./assets/header.png" class="d-block w-100" alt="...">
+            <img src="./assets/header.png" class="d-block w-100 " alt="banner1">
           </div>
           <div class="carousel-item">
-            <img src="./assets/header.png" class="d-block w-100" alt="...">
+            <img  src="./assets/header.png" class="d-block w-100 " alt="banner1">
           </div>
           <div class="carousel-item">
-            <img src="./assets/header.png" class="d-block w-100" alt="...">
+            <img  src="./assets/header.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="banner2">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/banner2.png" class="d-block w-100 " alt="banner1">
+          </div>
+          <div class="carousel-item">
+            <img  src="./assets/banner2.png" class="d-block w-100 " alt="banner1">
+          </div>
+          <div class="carousel-item">
+            <img  src="./assets/banner2.png" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -80,7 +107,41 @@
     <main>
       <section>
         <div class="row linea-section" style="margin: 0" >
-          <img src="./assets/lineadetiempo.png" alt="linea de tiempo">
+          <img class="linea-img"src="./assets/lineadetiempo.png" alt="linea de tiempo">
+          
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/linea.png" class="d-block w-100" alt="linea de tiempo">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/linea.png" class="d-block w-100" alt="linea de tiempo">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/linea.png" class="d-block w-100" alt="linea de tiempo">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+          
+          
+          <!-- <img class="linea-img2"src="./assets/linea.png" alt="linea de tiempo"> -->
         </div>
       </section>
 
@@ -152,9 +213,9 @@
             <h1>A LA UANDES?</h1>
           </div>
           <div  class="col-lg-8 col-sm-12 venir-section-description">
-            <p>En esta plataforma puedes asesorarte y comunicarte con nosotros sin necesidad de venir al campus <span>UANDES.</span></p>
-            <p>De todas formas, estaremos atendiendo de manera presencial, con todas las medidas sanitarias correspondientes según el
-            protocolo sanitario. Puedes venir con solo un acompañante></p>
+            <p class="p">En esta plataforma puedes asesorarte y comunicarte con nosotros sin necesidad de venir al campus <span>UANDES.</span></p>
+            <p class="p">De todas formas, estaremos atendiendo de manera presencial, con todas las medidas sanitarias correspondientes según el
+            protocolo sanitario. Puedes venir con solo un acompañante</p>
             <button class="hvr-grow-shadow" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
               Revisa aquí los días y horarios de carreras
             </button>
@@ -283,7 +344,7 @@
                 <p class="section-columna-description_right"><span>NEM:</span> 10% <br/><span>RANKING:</span> 15% <br /><span>COMPRESIÓN LECTORA:</span> 25% <span>MATEMÁTICA:</span> 40% <br /><span>CIENCIAS O HISTORIA (OPCIONAL):</span> 10% <span>VALOR MATRICULA:</span> 16 UF
                 <br /><span>ARANCEL:</span> 175 UF</p>
                 <p class="section-columna-title_left2">VALORES Y ARANCELES</p>
-                <p class="section-columna-description_right"><span>VALOR MATRICULA:</span> 16 UF <span>ARANCEL:</span> 175 UF</p>
+                <p class="section-columna-description_right"><span>VALOR MATRICULA:</span> 16 UF <br /><span>ARANCEL:</span> 175 UF</p>
               </div>
            
             </div>
@@ -296,7 +357,7 @@
                 <p class="section-columna-description_right"><span>NEM:</span> 10% <br/><span>RANKING:</span> 15% <br /><span>COMPRESIÓN LECTORA:</span> 25% <span>MATEMÁTICA:</span> 40% <br /><span>CIENCIAS O HISTORIA (OPCIONAL):</span> 10% <span>VALOR MATRICULA:</span> 16 UF
                 <br /><span>ARANCEL:</span> 175 UF</p>
                 <p class="section-columna-title_left2">VALORES Y ARANCELES</p>
-                <p class="section-columna-description_right"><span>VALOR MATRICULA:</span> 16 UF <span>ARANCEL:</span> 175 UF</p>
+                <p class="section-columna-description_right"><span>VALOR MATRICULA:</span> 16 UF <br /><span>ARANCEL:</span> 175 UF</p>
               </div>
            
             </div>
@@ -309,7 +370,7 @@
                 <p class="section-columna-description_right"><span>NEM:</span> 10% <br/><span>RANKING:</span> 15% <br /><span>COMPRESIÓN LECTORA:</span> 25% <span>MATEMÁTICA:</span> 40% <br /><span>CIENCIAS O HISTORIA (OPCIONAL):</span> 10% <span>VALOR MATRICULA:</span> 16 UF
                 <br /><span>ARANCEL:</span> 175 UF</p>
                 <p class="section-columna-title_left2">VALORES Y ARANCELES</p>
-                <p class="section-columna-description_right"><span>VALOR MATRICULA:</span> 16 UF <span>ARANCEL:</span> 175 UF</p>
+                <p class="section-columna-description_right"><span>VALOR MATRICULA:</span> 16 UF <br /><span>ARANCEL:</span> 175 UF</p>
               </div>
             </div>
           </div>
@@ -326,7 +387,7 @@
                 <p class="section-columna-description_right"><span>NEM:</span> 10% <br/><span>RANKING:</span> 15% <br /><span>COMPRESIÓN LECTORA:</span> 25% <span>MATEMÁTICA:</span> 40% <br /><span>CIENCIAS O HISTORIA (OPCIONAL):</span> 10% <span>VALOR MATRICULA:</span> 16 UF
                 <br /><span>ARANCEL:</span> 175 UF</p>
                 <p class="section-columna-title_left2">VALORES Y ARANCELES</p>
-                <p class="section-columna-description_right"><span>VALOR MATRICULA:</span> 16 UF <span>ARANCEL:</span> 175 UF</p>
+                <p class="section-columna-description_right"><span>VALOR MATRICULA:</span> 16 UF <br /><span>ARANCEL:</span> 175 UF</p>
               </div>
            
             </div>
@@ -339,7 +400,7 @@
                 <p class="section-columna-description_right"><span>NEM:</span> 10% <br/><span>RANKING:</span> 15% <br /><span>COMPRESIÓN LECTORA:</span> 25% <span>MATEMÁTICA:</span> 40% <br /><span>CIENCIAS O HISTORIA (OPCIONAL):</span> 10% <span>VALOR MATRICULA:</span> 16 UF
                 <br /><span>ARANCEL:</span> 175 UF</p>
                 <p class="section-columna-title_left2">VALORES Y ARANCELES</p>
-                <p class="section-columna-description_right"><span>VALOR MATRICULA:</span> 16 UF <span>ARANCEL:</span> 175 UF</p>
+                <p class="section-columna-description_right"><span>VALOR MATRICULA:</span> 16 UF <br /><span>ARANCEL:</span> 175 UF</p>
               </div>
            
             </div>
@@ -352,7 +413,7 @@
                 <p class="section-columna-description_right"><span>NEM:</span> 10% <br/><span>RANKING:</span> 15% <br /><span>COMPRESIÓN LECTORA:</span> 25% <span>MATEMÁTICA:</span> 40% <br /><span>CIENCIAS O HISTORIA (OPCIONAL):</span> 10% <span>VALOR MATRICULA:</span> 16 UF
                 <br /><span>ARANCEL:</span> 175 UF</p>
                 <p class="section-columna-title_left2">VALORES Y ARANCELES</p>
-                <p class="section-columna-description_right"><span>VALOR MATRICULA:</span> 16 UF <span>ARANCEL:</span> 175 UF</p>
+                <p class="section-columna-description_right"><span>VALOR MATRICULA:</span> 16 UF <br /><span>ARANCEL:</span> 175 UF</p>
               </div>
             </div>
           </div>
@@ -368,7 +429,7 @@
                 <p class="section-columna-description_right"><span>NEM:</span> 10% <br/><span>RANKING:</span> 15% <br /><span>COMPRESIÓN LECTORA:</span> 25% <span>MATEMÁTICA:</span> 40% <br /><span>CIENCIAS O HISTORIA (OPCIONAL):</span> 10% <span>VALOR MATRICULA:</span> 16 UF
                 <br /><span>ARANCEL:</span> 175 UF</p>
                 <p class="section-columna-title_left2">VALORES Y ARANCELES</p>
-                <p class="section-columna-description_right"><span>VALOR MATRICULA:</span> 16 UF <span>ARANCEL:</span> 175 UF</p>
+                <p class="section-columna-description_right"><span>VALOR MATRICULA:</span> 16 UF <br /><span>ARANCEL:</span> 175 UF</p>
               </div>
            
             </div>
@@ -381,7 +442,7 @@
                 <p class="section-columna-description_right"><span>NEM:</span> 10% <br/><span>RANKING:</span> 15% <br /><span>COMPRESIÓN LECTORA:</span> 25% <span>MATEMÁTICA:</span> 40% <br /><span>CIENCIAS O HISTORIA (OPCIONAL):</span> 10% <span>VALOR MATRICULA:</span> 16 UF
                 <br /><span>ARANCEL:</span> 175 UF</p>
                 <p class="section-columna-title_left2">VALORES Y ARANCELES</p>
-                <p class="section-columna-description_right"><span>VALOR MATRICULA:</span> 16 UF <span>ARANCEL:</span> 175 UF</p>
+                <p class="section-columna-description_right"><span>VALOR MATRICULA:</span> 16 UF <br /><span>ARANCEL:</span> 175 UF</p>
               </div>
            
             </div>
@@ -394,7 +455,7 @@
                 <p class="section-columna-description_right"><span>NEM:</span> 10% <br/><span>RANKING:</span> 15% <br /><span>COMPRESIÓN LECTORA:</span> 25% <span>MATEMÁTICA:</span> 40% <br /><span>CIENCIAS O HISTORIA (OPCIONAL):</span> 10% <span>VALOR MATRICULA:</span> 16 UF
                 <br /><span>ARANCEL:</span> 175 UF</p>
                 <p class="section-columna-title_left2">VALORES Y ARANCELES</p>
-                <p class="section-columna-description_right"><span>VALOR MATRICULA:</span> 16 UF <span>ARANCEL:</span> 175 UF</p>
+                <p class="section-columna-description_right"><span>VALOR MATRICULA:</span> 16 UF <br /><span>ARANCEL:</span> 175 UF</p>
               </div>
             </div>
           </div>
@@ -410,7 +471,7 @@
                 <p class="section-columna-description_right"><span>NEM:</span> 10% <br/><span>RANKING:</span> 15% <br /><span>COMPRESIÓN LECTORA:</span> 25% <span>MATEMÁTICA:</span> 40% <br /><span>CIENCIAS O HISTORIA (OPCIONAL):</span> 10% <span>VALOR MATRICULA:</span> 16 UF
                 <br /><span>ARANCEL:</span> 175 UF</p>
                 <p class="section-columna-title_left2">VALORES Y ARANCELES</p>
-                <p class="section-columna-description_right"><span>VALOR MATRICULA:</span> 16 UF <span>ARANCEL:</span> 175 UF</p>
+                <p class="section-columna-description_right"><span>VALOR MATRICULA:</span> 16 UF <br /><span>ARANCEL:</span> 175 UF</p>
               </div>
            
             </div>
@@ -423,7 +484,7 @@
                 <p class="section-columna-description_right"><span>NEM:</span> 10% <br/><span>RANKING:</span> 15% <br /><span>COMPRESIÓN LECTORA:</span> 25% <span>MATEMÁTICA:</span> 40% <br /><span>CIENCIAS O HISTORIA (OPCIONAL):</span> 10% <span>VALOR MATRICULA:</span> 16 UF
                 <br /><span>ARANCEL:</span> 175 UF</p>
                 <p class="section-columna-title_left2">VALORES Y ARANCELES</p>
-                <p class="section-columna-description_right"><span>VALOR MATRICULA:</span> 16 UF <span>ARANCEL:</span> 175 UF</p>
+                <p class="section-columna-description_right"><span>VALOR MATRICULA:</span> 16 UF <br /><span>ARANCEL:</span> 175 UF</p>
               </div>
            
             </div>
@@ -436,7 +497,7 @@
                 <p class="section-columna-description_right"><span>NEM:</span> 10% <br/><span>RANKING:</span> 15% <br /><span>COMPRESIÓN LECTORA:</span> 25% <span>MATEMÁTICA:</span> 40% <br /><span>CIENCIAS O HISTORIA (OPCIONAL):</span> 10% <span>VALOR MATRICULA:</span> 16 UF
                 <br /><span>ARANCEL:</span> 175 UF</p>
                 <p class="section-columna-title_left2">VALORES Y ARANCELES</p>
-                <p class="section-columna-description_right"><span>VALOR MATRICULA:</span> 16 UF <span>ARANCEL:</span> 175 UF</p>
+                <p class="section-columna-description_right"><span>VALOR MATRICULA:</span> 16 UF <br /><span>ARANCEL:</span> 175 UF</p>
               </div>
             </div>
           </div>

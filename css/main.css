@@ -27,7 +27,7 @@ body {
 .row {
   margin: 0;
 }
-/* menu  */
+/* menu hamburguesa */
 #menu-btn {
   position: absolute;
   left: 0;
@@ -55,16 +55,21 @@ body {
 
 #menu {
   position: absolute;
-  top: 89px;
+  top: 86px;
   left: 0;
+  right: 0;
   width: 100%;
-  padding: 1em;
+  padding-bottom: 20px;
   background-color: #e00d34;
   z-index: 20;
+  text-align: center;
 }
 #menu ul {
   padding: 0;
   margin: 0;
+}
+#menu ul li a {
+  font-weight: 400;
 }
 #menu ul li {
   list-style-type: none;
@@ -73,7 +78,11 @@ body {
   color: white;
   transition: all 0.3s ease-out;
 }
-
+.menu-iconos-hambur {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 #menu ul li a:hover {
   color: white;
   text-decoration: underline;
@@ -114,6 +123,9 @@ header nav .nav-menu-center {
   align-items: center;
   height: 89px;
 }
+.nav-menu-center a {
+  font-weight: 400;
+}
 .nav-menu-center a:hover {
   color: white;
   border-bottom: 2px solid white;
@@ -125,15 +137,38 @@ header nav .nav-menu-social {
 }
 
 nav ul li {
-  padding: 0 25px;
+  padding: 0 10px;
 }
-
 .nav-menu-social-icon {
   padding: 4px;
 }
 .linea-section img {
   padding: 0;
   margin: 0;
+}
+.linea-img2 {
+  display: none;
+}
+#carouselExampleIndicators {
+  display: none;
+}
+.banner2 {
+  display: none;
+}
+
+@media (max-width: 426px) {
+  .linea-section .linea-img {
+    display: none;
+  }
+  #carouselExampleIndicators {
+    display: block;
+  }
+  .banner1 {
+    display: none;
+  }
+  .banner2 {
+    display: inherit;
+  }
 }
 .nav-menu-hambur {
   position: absolute;
@@ -246,12 +281,28 @@ nav ul li {
   height: 70px;
   margin-top: 92px;
 }
-@media (max-width: 769px) {
+@media (max-width: 991px) {
+  .verifica-section-foto {
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 100%;
+    width: 270px;
+  }
+  .verifica-section-text {
+    width: 450px;
+  }
+  .verifica-section-button button {
+    margin-top: -100px;
+    margin-left: 70px;
+  }
+}
+@media (max-width: 720px) {
   .verifica-section-foto {
     justify-content: flex-start;
     flex-direction: row;
     width: 171px;
     padding: 0;
+    height: 270px;
   }
   .verifica-section-foto img {
     width: 171px;
@@ -283,12 +334,13 @@ nav ul li {
     height: 60px;
     margin-top: -30px;
     margin-bottom: 17px;
+    margin-left: 0;
   }
 }
 
 /* container asesoramiento */
 .asesoramiento-section-container {
-  height: 1131px;
+  height: 1191px;
   width: 100%;
   margin: 0;
   background-image: linear-gradient(180deg, #e00d34 0%, #70071a 100%);
@@ -638,6 +690,11 @@ section div .section-steps-description {
   font-size: 36px;
   font-weight: bold;
 }
+.venir-section-description .p {
+  font-size: 18px;
+  font-weight: 300;
+  padding-right: 190px;
+}
 .venir-section-description p {
   font-size: 18px;
   font-weight: 300;
@@ -677,6 +734,7 @@ section div .section-steps-description {
     font-size: var(--size-14);
     margin-top: 15px;
     line-height: 16px;
+    padding-right: 0;
   }
   .venir-section-description button {
     font-size: var(--size-14);
@@ -734,7 +792,7 @@ section div .section-steps-description {
 }
 .modal-container-interno {
   display: grid;
-  grid-template-columns: 212px 200px 200px;
+  grid-template-columns: 215px 200px 200px;
   grid-template-rows: 0.6fr 0.4fr auto auto;
 }
 .modal-container-title {
@@ -743,7 +801,7 @@ section div .section-steps-description {
   grid-row-start: 1;
   grid-row-end: 2;
   text-align: center;
-  background: #e03f02;
+  background: #f2b199;
   margin: 0;
   padding-top: 5px;
   font-family: var(--font-Mont);
@@ -756,7 +814,7 @@ section div .section-steps-description {
   grid-row-start: 2;
   grid-row-end: 3;
   text-align: center;
-  background: #e03f02;
+  background: #f2b199;
   height: auto;
   margin: 0;
   font-family: var(--font-Mont);
@@ -776,7 +834,7 @@ section div .section-steps-description {
   margin: 0;
   padding: 18px 10px;
   color: #37424a;
-  background: #f56f3e;
+  background: #fbeae4;
 }
 .modal-container-title_bottom1 {
   grid-column-start: 2;
@@ -789,7 +847,7 @@ section div .section-steps-description {
   margin: 0;
   padding: 18px 10px;
   color: #37424a;
-  background: #f56f3e;
+  background: #fbeae4;
 }
 .modal-container-title_bottom2 {
   grid-column-start: 3;
@@ -802,7 +860,7 @@ section div .section-steps-description {
   margin: 0;
   padding: 18px 10px;
   color: #37424a;
-  background: #f56f3e;
+  background: #fbeae4;
 }
 .modal-container-items {
   grid-column-start: 1;
@@ -845,7 +903,7 @@ section div .section-steps-description {
 }
 .section-opciones-container_main {
   padding: 0;
-  padding-top: 90px;
+  /* padding-top: 90px; */
   width: 100%;
   margin: 0;
   display: flex;
@@ -985,6 +1043,7 @@ section div .section-steps-description {
   padding: 7px;
   border: 1px solid #f0f0f0;
   margin: 0;
+  background: #f8f8f8;
 }
 .section-columna-title_left1 {
   grid-column-start: 1;
@@ -1081,15 +1140,18 @@ section div .section-steps-description {
   font-family: var(--font-Mont);
   color: #37424a;
   font-size: 18px;
+  font-weight: 400;
 }
 .accordion-button:focus {
   border-color: #e00d34;
   box-shadow: 0 0 0 0.1rem rgb(224 13 52 / 100%);
   background: transparent;
   color: #e00d34;
+  font-weight: bold;
 }
 .accordion-button:not(.collapsed) {
   color: #e00d34;
+  font-weight: bold;
 }
 @media (max-width: 768px) {
   .accordion-item {
@@ -1268,7 +1330,7 @@ footer p {
 .footer-logo {
   width: 227px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   footer {
     height: 493px;
     display: block;
