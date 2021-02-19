@@ -281,6 +281,10 @@ nav ul li {
   height: 70px;
   margin-top: 92px;
 }
+.verifica-section-button button i {
+  font-size: 24px;
+  padding: 0 10px;
+}
 @media (max-width: 991px) {
   .verifica-section-foto {
     justify-content: flex-start;
@@ -303,6 +307,7 @@ nav ul li {
     width: 171px;
     padding: 0;
     height: 270px;
+    margin-left: 25px;
   }
   .verifica-section-foto img {
     width: 171px;
@@ -730,6 +735,12 @@ section div .section-steps-description {
     width: 100%;
     padding: 0 19px;
   }
+  .venir-section-description .p {
+    font-size: var(--size-14);
+    margin-top: 15px;
+    line-height: 16px;
+    padding-right: 0;
+  }
   .venir-section-description p {
     font-size: var(--size-14);
     margin-top: 15px;
@@ -951,6 +962,11 @@ section div .section-steps-description {
   font-size: var(--size-14);
   font-weight: 400;
   color: #37424a;
+}
+.section-informacion-opciones a:focus {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #e03f02;
 }
 .form-select {
   display: none;
@@ -1261,6 +1277,11 @@ section div .section-steps-description {
   border-radius: 6px;
   background-image: var(--bg-button);
 }
+.masinformacion-section-info button i {
+  font-size: 24px;
+  padding: 0 10px;
+}
+
 @media (max-width: 768px) {
   .masinformacion-section-container {
     height: 262px;
