@@ -924,6 +924,48 @@ section div .section-steps-description {
 
   color: #37424a;
 }
+@media (max-width: 768px) {
+  .modal-header-grid {
+    width: 100%;
+    grid-template-columns: 250px 130px;
+  }
+  .modal-header-grid button {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .modal-container-interno {
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 0.6fr 0.4fr auto auto;
+  }
+
+  .modal-container-title_bottom {
+    font-size: 12px;
+  }
+  .modal-container-title_bottom1 {
+    font-size: 12px;
+  }
+  .modal-container-title_bottom2 {
+    font-size: 12px;
+  }
+  .modal-container-items p {
+    font-size: 10px;
+  }
+  .modal-container-items1 p {
+    font-size: 10px;
+  }
+  .modal-container-items2 p {
+    font-size: 10px;
+  }
+  .modal-container-title {
+    font-size: 14px;
+  }
+  .modal-title {
+    font-size: 16px;
+  }
+  .modal-subtitle {
+    font-size: 12px;
+  }
+}
 
 /* seccion informacion  */
 .section-informacion-container_main {
