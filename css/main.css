@@ -342,7 +342,7 @@ nav ul li {
     margin-left: 0;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 370px) {
   .verifica-section-foto {
     margin-left: 0;
   }
