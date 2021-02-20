@@ -1,0 +1,196 @@
+/* seccion informacion  */
+.section-informacion-container_main {
+  padding: 0;
+  padding-top: 90px;
+  width: 100%;
+}
+.section-opciones-container_main {
+  padding: 0;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.section-informacion-container {
+  padding: 0;
+  padding-top: 90px;
+  width: 100%;
+}
+.section-informacion-container h1 {
+  text-align: center;
+  font-family: var(--font-Mont);
+  font-size: 42px;
+  font-weight: var(--weight-bold);
+  color: var(--color-gray);
+  margin: 0 auto;
+  width: 326px;
+}
+.section-informacion-container h2 {
+  text-align: center;
+  font-family: var(--font-Mont);
+  font-size: 42px;
+  font-weight: var(--weight-bold);
+  color: var(--color-white);
+  background: var(--color-red);
+  width: 326px;
+  margin: 0 auto;
+}
+.section-opciones-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.section-informacion-opciones {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  padding-top: 55px;
+  padding-bottom: 14px;
+}
+.section-informacion-opciones a {
+  font-family: var(--font-Mont);
+  font-size: var(--size-14);
+  font-weight: var(--weight-regular);
+  color: #37424a;
+}
+.section-informacion-opciones a:focus {
+  text-decoration: underline;
+  font-weight: var(--weight-bold);
+  color: #e03f02;
+}
+.form-select {
+  display: none;
+}
+.select {
+  width: 100%;
+  margin: 0;
+}
+@media (max-width: 1224px) {
+  .section-opciones-container_main {
+    display: none;
+  }
+  .section-opciones-container {
+    margin: 0;
+  }
+  .table-section-container {
+    padding: 0;
+    align-items: center;
+  }
+
+  .section-informacion-container h1,
+  .section-informacion-container h2 {
+    font-size: var(--size-22);
+    width: 170px;
+  }
+  .section-informacion-container {
+    padding-top: 49px;
+  }
+
+  .form-select {
+    display: block;
+    width: 360px;
+    margin: 0 auto;
+    margin-top: 46px;
+    margin-bottom: 11px;
+  }
+}
+
+.table-section-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  color: var(--color-gray);
+  font-size: 12px;
+  font-weight: var(--weight-bold);
+}
+
+.table-section-table_container {
+  display: flex;
+  justify-content: center;
+  background: var(--color-white);
+  padding-bottom: 20px;
+}
+.table-section-columna {
+  display: grid;
+  grid-template-columns: 150px 264px;
+  grid-template-rows: 46px 40px 140px 53px;
+  background: var(--color-white);
+  padding-top: 30px;
+  width: 414px;
+}
+
+.section-columna-header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: center;
+  padding-top: 15px;
+  margin: 0;
+  font-family: var(--font-Mont);
+  color: var(--color-white);
+  background-color: #e03f02;
+  border: 1px solid #f0f0f0;
+}
+.section-columna-title_left {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin: 0;
+  color: #e03f02;
+  padding: 7px;
+  border: 1px solid #f0f0f0;
+}
+.section-columna-description_right {
+  color: var(--color-gray);
+  font-weight: var(--weight-regular);
+  padding: 7px;
+  border: 1px solid #f0f0f0;
+  margin: 0;
+  background: #f8f8f8;
+}
+.section-columna-title_left1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin: 0;
+  color: #e03f02;
+  padding: 9px;
+  border: 1px solid #f0f0f0;
+}
+.section-columna-title_left2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  margin: 0;
+  color: #e03f02;
+  padding: 6px 13px;
+  border: 1px solid #f0f0f0;
+}
+@media (max-width: 1200px) {
+  .table-section-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .table-section-table_container {
+    width: auto;
+  }
+  .section-columna-description_right {
+    font-size: 11px;
+  }
+  #hide {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .table-section-columna {
+    display: grid;
+    grid-template-columns: 130px 240px;
+    grid-template-rows: 46px 40px 140px 53px;
+    width: 370px;
+  }
+}

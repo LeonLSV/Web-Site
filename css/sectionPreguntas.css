@@ -1,0 +1,124 @@
+/* sección preguntas frecuentes */
+.container-acordeon {
+  padding: 0 104px;
+}
+.container-preguntas {
+  display: flex;
+  flex-direction: row;
+  margin-top: 148px;
+  padding-left: 104px;
+  margin-bottom: 35px;
+}
+.preguntas-title {
+  font-weight: var(--weight-bold);
+  font-family: var(--font-Mont);
+  font-size: 36px;
+  color: #37424a;
+}
+.preguntas-title_background {
+  background: var(--color-red);
+  color: var(--color-white);
+  font-weight: var(--weight-bold);
+  font-family: var(--font-Mont);
+  font-size: 36px;
+  padding: 0 12px;
+}
+@media (max-width: 768px) {
+  .container-preguntas {
+    display: block;
+    margin-top: 45px;
+    text-align: center;
+    padding: 0;
+  }
+  .preguntas-title {
+    font-size: var(--size-22);
+    margin: 0;
+  }
+  .preguntas-title_background {
+    font-size: var(--size-22);
+    padding: 0 0;
+    width: 179px;
+    margin: 0 auto;
+  }
+}
+
+.accordion-item {
+  width: 90%;
+}
+.accordion-button {
+  font-family: var(--font-Mont);
+  color: #37424a;
+  font-size: 18px;
+  font-weight: var(--weight-regular);
+}
+.accordion-button:focus {
+  border-color: var(--color-red);
+  box-shadow: 0 0 0 0.1rem rgb(224 13 52 / 100%);
+  background: transparent;
+  color: var(--color-red);
+  font-weight: var(--weight-bold);
+}
+.accordion-button:not(.collapsed) {
+  color: var(--color-red);
+  font-weight: var(--weight-bold);
+}
+@media (max-width: 768px) {
+  .accordion-item {
+    width: 100%;
+  }
+}
+@media (max-width: 426px) {
+  .container-acordeon {
+    padding: 0;
+    margin-bottom: 48px;
+  }
+  .accordion-item {
+    width: 90%;
+  }
+}
+
+.section-right-container {
+  background: var(--color-white);
+  height: 366px;
+  padding-left: 40px;
+}
+.section-right-container h4 {
+  font-family: var(--font-Mont);
+  font-weight: var(--weight-bold);
+  font-size: 18px;
+  color: var(--color-red);
+  margin: 0;
+  padding-top: 51px;
+}
+.section-right-container h5 {
+  font-family: var(--font-Mont);
+  font-weight: var(--weight-regular);
+  font-size: 12px;
+  margin: 0;
+  color: var(--color-gray);
+  padding-top: 17px;
+}
+.section-right-iconos {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  cursor: pointer;
+}
+.section-right-iconos h3 {
+  font-size: var(--size-16);
+  margin: 0;
+  padding: 0;
+  color: var(--color-red);
+  text-decoration: underline;
+}
+.section-right-iconos p {
+  font-size: var(--size-16);
+  margin: 0;
+  padding: 0;
+  color: var(--color-gray);
+}
+
+.section-right-iconos img {
+  width: 22px;
+  margin-right: 16px;
+}
