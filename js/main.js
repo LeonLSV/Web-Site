@@ -27,16 +27,32 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// console.log("hola");
-// const isIntersecting = (entry) => {
-//   return entry.isIntersecting;
-// };
-
-// const observer = new IntersectionObserver((entries) => {
-//   entries.filter(isIntersecting).forEach(accion);
-// });
-
+// menu hamburguesa
 $("#menu").hide();
 $("#menu-btn").click(function () {
   $("#menu").slideToggle();
+});
+
+// Lazy Loading e intersection observer
+const logos = document.querySelectorAll("img");
+
+function intersection(entries, observer) {
+  entries.forEach((entry) => {
+    console.log("intersection");
+    if (entry.isIntersecting) {
+      entry.target.src = entry.target.dataset.src;
+    }
+  });
+}
+
+const options = {
+  root: null,
+  rootMargin: "1000px",
+  threshold: 0,
+};
+
+const observer = new IntersectionObserver(intersection, options);
+
+logos.forEach((logo) => {
+  observer.observe(logo);
 });
