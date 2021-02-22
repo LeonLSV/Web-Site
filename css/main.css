@@ -225,3 +225,37 @@ nav ul li {
     display: none;
   }
 }
+@media (min-width: 768px) {
+  .carousel-control-prev1 {
+    background: rgba(0, 0, 0, 0.5);
+    width: 60px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    top: calc(13vw);
+    left: 20px;
+    border: none;
+  }
+  .carousel-control-next1 {
+    background: rgba(0, 0, 0, 0.5);
+    width: 60px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    top: calc(13vw);
+    right: 20px;
+    border: none;
+  }
+  .carousel-control-next1:hover {
+    transform: scale(1.1);
+  }
+  .carousel-control-prev1:hover {
+    transform: scale(1.1);
+  }
+}

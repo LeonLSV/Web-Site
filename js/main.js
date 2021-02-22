@@ -56,3 +56,9 @@ const observer = new IntersectionObserver(intersection, options);
 logos.forEach((logo) => {
   observer.observe(logo);
 });
+
+var myCarousel = document.querySelector("#myCarousel");
+var carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 2000,
+  wrap: true,
+});
