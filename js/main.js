@@ -58,7 +58,7 @@ logos.forEach((logo) => {
 });
 
 // Carousel
-var myCarousel = document.querySelector("#myCarousel");
+var myCarousel = document.querySelector("#carouselExampleControls");
 var carousel = new bootstrap.Carousel(myCarousel, {
   interval: 2000,
   wrap: true,
